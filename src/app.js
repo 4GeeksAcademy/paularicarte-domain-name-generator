@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable 
 import "bootstrap";
 import "./style.css";
 
@@ -8,7 +8,7 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   //write your code here
   console.log("Hello Rigo from the console!");
-};
+};*/
 
 /*let gerenadorDominio = () => {
   var pronoun = ["the", "our"];
@@ -41,5 +41,5 @@ for (let i = 0; i < pronouns.length; i++) {
 }
 
 for (let m = 0; m < domainNames.length; m++) {
-  console.log(domainNames[l]);
+  console.log(domainNames[m]);
 }
