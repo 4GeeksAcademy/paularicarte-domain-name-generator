@@ -86,10 +86,10 @@ for (let m = 0; m < domainNames.length; m++) {
 
 //"ARREGLADO" AÑADIENDO UN ELSE A LA CONDICIÓN IF PARA QUE SOLO ME COJA UNO DE LOS DOS DOMINIOS.
 
-var pronouns = ["the", "our", "last"];
-var adjectives = ["great", "big", "of"];
-var nouns = ["jogger", "racoon", "us"];
-var extensions = ["com", "net", "us", "io"];
+let pronouns = ["the", "our", "last"];
+let adjectives = ["great", "big", "of"];
+let nouns = ["jogger", "racoon", "us"];
+let extensions = ["com", "net", "us", "io"];
 
 let domainNames = [];
 
@@ -99,7 +99,7 @@ for (let i = 0; i < pronouns.length; i++) {
       for (let l = 0; l < extensions.length; l++) {
         // Check for "domain hacks" (extension is part of noun)
         if (nouns[k].endsWith(extensions[l])) {
-          var hackDomainName =
+          let hackDomainName =
             pronouns[i] +
             adjectives[j] +
             nouns[k].slice(0, -extensions[l].length) +
@@ -107,7 +107,7 @@ for (let i = 0; i < pronouns.length; i++) {
             extensions[l];
           domainNames.push(hackDomainName);
         } else {
-          var domainName =
+          let domainName =
             pronouns[i] + adjectives[j] + nouns[k] + "." + extensions[l];
           domainNames.push(domainName);
         }
